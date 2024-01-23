@@ -58,5 +58,5 @@ The screenshot demostrates the web application's apperarance.
 ## Links
 
 * Live URL: https://ashlouise.github.io/Challenge-05/
-* GitHub: https://github.com/ASHLOUISE 
+* GitHub: https://github.com/ASHLOUISE/Challenge-05
 
