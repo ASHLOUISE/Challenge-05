@@ -6,8 +6,13 @@ $(document).ready(function(){
 
         localStorage.setItem(time, value);
 
+        $(".notification").addClass('show')
 
         showNotification("Appointment saved to local storage");
+
+        setTimeout(function(){
+            $(".notification").removeClass('show');
+        }, 5000);
     });
     
 
@@ -23,15 +28,18 @@ $(document).ready(function(){
     
     function hourUpdate(){
         var currentHour = moment().hours();
-        
 
-    
-        $(".time-block").each(function () {
-            var timeBlockId = $(this).attr("id");
-            var storedValue = localStorage.getItem(timeBlockId);
-    
-            if (storedValue) {
-                $(this).find(".description").val(storedValue);
+        $(".time-block").each(function(){
+            var blockHour = parseInt($(this).attr("id").split("-")[1]);
+            if(blockHour < currentHour){
+                $(this).addClass("past");
+            } else if(blockHour === currentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future")
             }
         });
     }
