@@ -50,7 +50,8 @@ Create a simple calendar application that allows a user to save events for each 
 
 The screenshot demostrates the web application's apperarance.
 
-![image](https://github.com/ASHLOUISE/Challenge-05/assets/152327760/2bb4b3c7-181b-4702-b52a-4a0b19815de4)
+![image](https://github.com/ASHLOUISE/Challenge-05/assets/152327760/005245af-1d9a-4f64-9615-bf50b101ddb9)
+
 
 
 
